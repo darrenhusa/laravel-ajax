@@ -12,7 +12,7 @@
         <!-- <form asp-controller="Reservation" asp-action="GetValues" method="post"> -->
             <p>Booking room for Last, First</p>
             <p>
-                STEP 1: Enter reservation details.  Click button to load the available rooms.
+                STEP 1: Enter the reservation details.
             </p>
 
             <div class="form-group">
@@ -27,8 +27,8 @@
 
             <div class="form-group" id="room_category_drop_down">
                 <label for="category">Room Category</label>
-                <select for="category" name="category">
-                  <option v-for="category in categories">@{{ category }}</option>
+                <select name="category" id="category">
+                  <option v-for="category in room_categories">@{{ category }}</option>
                 </select>
             </div>
 
@@ -38,7 +38,7 @@
 
             <div class="form-group" id="room_drop_down">
                 <label for="room">Room</label>
-                <select for="room" name="room">
+                <select name="room" id="room">
                   <option v-for="room in rooms">@{{ room }}</option>
                 </select>
             </div>
@@ -47,7 +47,9 @@
                 <button class="btn btn-primary" type="submit">Save</button>
                 <button class="" type="reset">Cancel</button>
             </div>
-
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+            <script src="/js/my_app.js"></script>
         </form>
     </body>
 </html>
