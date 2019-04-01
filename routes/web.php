@@ -31,6 +31,10 @@ Route::get('/available_rooms', 'AjaxController@get_available_rooms');
 
 Route::get('/room_categories', 'AjaxController@get_categories');
 
+Route::get('/make_reservation', function() {
+    return view('make_reservation');
+});
+
 // Route::get('/available_rooms', function() {
 //     // dd('hello');
 //     return [102, 103, 104, 105, 106, 107, 108, 109, 110];
