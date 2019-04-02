@@ -7,9 +7,8 @@ use App\Grocery;
 
 class GroceryController extends Controller
 {
-
-  public function store(Request $request)
-  {
+    public function store(Request $request)
+    {
         // dd($request);
 
         $grocery = new Grocery();
@@ -22,5 +21,5 @@ class GroceryController extends Controller
         // dd($grocery);
 
         return response()->json(['success'=>'Data is successfully added']);
-  }
+    }
 }
