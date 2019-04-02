@@ -34,13 +34,17 @@ Route::get('/make_reservation', function() {
     return view('make_reservation');
 });
 
-Route::get('/load_categories', function() {
-    return ['Economy', 'Deluxe', 'Suite'];
-});
+Route::get('/load_categories', 'AjaxController@get_categories');
 
-Route::get('/load_rooms', function() {
-    return [102, 103, 104, 105, 106, 107, 108, 109, 110];
-});
+Route::get('/load_available_rooms', 'AjaxController@load_available_rooms');
+
+// Route::get('/load_categories', function() {
+//     return ['Economy', 'Deluxe', 'Suite'];
+// });
+
+// Route::get('/load_rooms', function() {
+//     return [102, 103, 104, 105, 106, 107, 108, 109, 110];
+// });
 
 // Route::get('/available_rooms', function() {
 //     // dd('hello');

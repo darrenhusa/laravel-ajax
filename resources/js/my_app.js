@@ -11,7 +11,7 @@ new Vue({
   mounted() {
       // axios.get('/skills').then(response => console.log(response.data));
       // axios.get('/skills').then(response => this.skills = response.data);
-      axios.get('/load_rooms').then(response => this.rooms = response.data);
+      axios.get('/load_available_rooms').then(response => this.rooms = response.data);
 
     }
   });

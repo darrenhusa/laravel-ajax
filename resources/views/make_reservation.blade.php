@@ -8,7 +8,7 @@
     </head>
     <body class="m-1 p-1">
         <h3>Make Reservation</h3>
-        <form class="" action="index.html" method="post">
+        <form action="/load_available_rooms" method="get">
         <!-- <form asp-controller="Reservation" asp-action="GetValues" method="post"> -->
             <p>Booking room for Last, First</p>
             <p>
